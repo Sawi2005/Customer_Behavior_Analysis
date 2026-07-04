@@ -1,134 +1,210 @@
-Customer Shopping Behavior Analysis
-Overview
+# Customer Shopping Behavior Analysis
 
-The Customer Shopping Behavior Analysis project demonstrates a complete end-to-end data analytics workflow using Python, MySQL, and Power BI. The objective of the project is to analyze customer shopping patterns, uncover meaningful business insights, and present the findings through an interactive dashboard and a comprehensive report.
+## Overview
 
-The project covers every stage of the analytics process, including data loading, data cleaning, exploratory data analysis (EDA), SQL-based business analysis, dashboard development, and report generation. It showcases practical data analytics skills commonly used in real-world business environments.
+This project analyzes customer shopping behavior using Python, SQL, and Power BI. The objective is to extract meaningful business insights by performing data cleaning, exploratory data analysis (EDA), SQL-based analysis, and interactive dashboard creation.
 
-Dataset
+The project demonstrates an end-to-end data analytics workflow, from raw data preprocessing to business reporting and visualization.
 
-The project uses a customer shopping behavior dataset containing information related to customer demographics, purchasing habits, product categories, payment methods, subscription status, seasonal purchases, discounts, review ratings, and shopping frequency.
+---
 
-The dataset serves as the foundation for identifying customer trends, purchasing patterns, and business opportunities through data-driven analysis.
+## Dataset
 
-Tools & Technologies
+The dataset contains customer shopping information, including:
 
-The following tools and technologies were used throughout the project:
+- Customer demographics
+- Purchase details
+- Product categories
+- Payment methods
+- Shopping frequency
+- Review ratings
+- Subscription status
+- Seasonal purchases
+- Discounts and promo code usage
 
-Python
-Pandas
-NumPy
-Matplotlib
-Seaborn
-MySQL
-SQL Queries
-Aggregate Functions
-Window Functions
-Joins and Subqueries
-Power BI
-Interactive Dashboard
-Data Modeling
-DAX Measures
-Charts and Visualizations
-Jupyter Notebook
-Project Workflow
-1. Data Loading
-Imported the dataset into Python using Pandas.
-Explored the dataset structure, column names, and data types.
-2. Exploratory Data Analysis (EDA)
-Performed descriptive statistical analysis.
-Identified missing values and duplicate records.
-Explored customer demographics and purchasing behavior.
-Visualized trends using charts and graphs.
-Examined relationships between different variables.
-3. Data Cleaning
-Removed duplicate records.
-Handled missing values.
-Corrected inconsistent data formats.
-Converted columns to appropriate data types.
-Prepared the dataset for further analysis.
-4. SQL Analysis
+---
 
-Business-related SQL queries were written and executed in MySQL to analyze:
+## Project Workflow
 
-Customer purchase behavior
-Product category performance
-Revenue insights
-Payment method distribution
-Seasonal shopping trends
-Customer segmentation
-Ranking and aggregation using SQL functions
-5. Dashboard Development
+### 1. Data Loading
+- Imported the dataset using Python (Pandas)
+- Inspected data structure and column information
 
-An interactive Power BI dashboard was created to visualize key business metrics and enable easy exploration of customer shopping behavior.
+### 2. Exploratory Data Analysis (EDA)
+- Checked missing values
+- Analyzed data distributions
+- Identified trends and patterns
+- Generated summary statistics
+- Visualized important relationships
 
-6. Report Preparation
+### 3. Data Cleaning
+- Removed duplicate records
+- Handled missing values
+- Corrected data types
+- Standardized categorical values
+- Prepared data for analysis
 
-A detailed analytical report was prepared summarizing the methodology, findings, business insights, and recommendations obtained from the analysis.
+### 4. SQL Analysis (MySQL)
+Performed business-oriented SQL queries including:
+- Customer purchase analysis
+- Revenue insights
+- Product category performance
+- Payment method analysis
+- Seasonal shopping trends
+- Customer segmentation
+- Ranking and aggregation using SQL functions
 
-Dashboard
+### 5. Power BI Dashboard
+Built an interactive dashboard containing:
+- KPIs
+- Sales overview
+- Customer demographics
+- Category-wise analysis
+- Payment method insights
+- Seasonal trends
+- Interactive filters and slicers
 
-The Power BI dashboard includes interactive visualizations such as:
+### 6. Report Preparation
+Created a business report summarizing:
+- Key findings
+- Business insights
+- Recommendations
+- Dashboard interpretation
 
-Customer Overview
-Sales and Purchase Analysis
-Product Category Performance
-Customer Demographics
-Payment Method Distribution
-Subscription Analysis
-Seasonal Purchase Trends
-Interactive Filters and Slicers
+---
 
-The dashboard enables users to quickly identify important trends and make data-driven business decisions.
+## Tools & Technologies
 
-Key Results
+- **Python**
+  - Pandas
+  - NumPy
+  - Matplotlib
+  - Seaborn
 
-The analysis provided several valuable business insights, including:
+- **MySQL**
+  - SQL Queries
+  - Aggregations
+  - Window Functions
 
-Identification of the most popular product categories.
-Analysis of customer purchasing behavior across different demographic groups.
-Comparison of preferred payment methods.
-Understanding of seasonal purchasing trends.
-Evaluation of customer subscription patterns.
-Assessment of the impact of discounts and promotional offers on customer purchases.
+- **Power BI**
+  - Interactive Dashboard
+  - Data Modeling
+  - DAX
+  - Visualizations
 
-These insights can help businesses improve marketing strategies, customer engagement, and overall decision-making.
+- **Jupyter Notebook**
 
-How to Run
-Python Analysis
-Clone the repository.
-Install the required Python libraries:
-pip install pandas numpy matplotlib seaborn
-Open the Jupyter Notebook.
-Run all cells to perform data loading, cleaning, and exploratory data analysis.
-SQL Analysis
-Import the dataset into MySQL.
-Execute the SQL queries provided in the customer_sql.sql file using MySQL Workbench.
-Power BI Dashboard
-Open the Customer_behavior_dashboard.pbix file using Power BI Desktop.
-Refresh the data if necessary.
-Explore the interactive dashboard and business insights.
-Project Structure
+---
+
+## Project Structure
+
+```
 Customer-Shopping-Behavior-Analysis/
 │
-├── customer_shopping_behavior.csv
-├── EDA.ipynb
-├── customer_sql.sql
-├── Customer_behavior_dashboard.pbix
-├── Report.pdf
+├── customer_shopping_behavior.csv      # Dataset
+├── Customer_behavior_dashboard.pbix    # Power BI Dashboard
+├── customer_sql.sql                    # SQL Queries
+├── EDA.ipynb                           # Python Analysis
+├── Report.pdf                          # Project Report
 └── README.md
-Skills Demonstrated
-Data Cleaning
-Exploratory Data Analysis (EDA)
-SQL Querying
-Data Visualization
-Dashboard Development
-Business Intelligence
-Data Storytelling
-Analytical Thinking
-Power BI Reporting
-Future Improvements
-Develop predictive models for customer purchase behavior.
-Automate data refresh using Power BI Service.
-Integrate additional datasets for deeper business analysis.
-Deploy the dashboard for online access and real-time reporting.
+```
+
+---
+
+## Dashboard
+
+The Power BI dashboard provides:
+
+- Total Customers
+- Total Sales Overview
+- Product Category Analysis
+- Customer Demographics
+- Payment Method Distribution
+- Subscription Analysis
+- Seasonal Purchase Trends
+- Interactive Filters
+
+---
+
+## Key Results
+
+Some of the insights obtained include:
+
+- Identified top-performing product categories.
+- Analyzed customer purchasing behavior across different demographics.
+- Evaluated payment method preferences.
+- Studied seasonal buying trends.
+- Examined the impact of discounts and promotional offers.
+- Generated business recommendations based on data-driven insights.
+
+---
+
+## How to Run
+
+### Python Analysis
+
+1. Clone the repository.
+
+```bash
+git clone https://github.com/yourusername/customer-shopping-analysis.git
+```
+
+2. Install dependencies.
+
+```bash
+pip install pandas numpy matplotlib seaborn
+```
+
+3. Open the Jupyter Notebook.
+
+```bash
+jupyter notebook
+```
+
+4. Run the notebook to perform data loading, cleaning, and EDA.
+
+---
+
+### SQL Analysis
+
+1. Import the dataset into MySQL.
+2. Open the `customer_sql.sql` file.
+3. Execute the queries using MySQL Workbench.
+
+---
+
+### Power BI Dashboard
+
+1. Open `Customer_behavior_dashboard.pbix` in Power BI Desktop.
+2. Refresh the data if required.
+3. Explore the interactive dashboard.
+
+---
+
+## Skills Demonstrated
+
+- Data Cleaning
+- Exploratory Data Analysis (EDA)
+- SQL Querying
+- Data Visualization
+- Business Intelligence
+- Dashboard Development
+- Data Storytelling
+- Analytical Thinking
+
+---
+
+## Future Improvements
+
+- Build predictive models for customer purchasing behavior.
+- Automate data refresh using Power BI Service.
+- Deploy the dashboard online.
+- Integrate additional datasets for deeper analysis.
+
+---
+
+## Author
+
+**Sawi Trehan**
+
+If you found this project useful, feel free to ⭐ the repository.
